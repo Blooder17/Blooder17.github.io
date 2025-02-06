@@ -386,13 +386,13 @@ a {
     transition: transform .5s;
 }
 
-#prev-btn {
+.prev-btn {
     position: absolute;
     left: 25px;
     padding: 10px 25px;
 }
 
-#next-btn {
+.next-btn {
     position: absolute;
     right: 25px;
     padding: 10px 25px;

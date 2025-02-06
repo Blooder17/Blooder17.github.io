@@ -34,7 +34,9 @@ $('.project-btn').on('click', function () {
     $('#project-' + projectNumber).css('display', 'flex');
 });
 
-$('#prev-btn').on('click', function () {
+$('.prev-btn').on('click', function () {
+    console.log('poggers');
+    
     if (imgCounter == 1) {
         imgCounter = maxImgCounter;
     } else {
@@ -43,7 +45,7 @@ $('#prev-btn').on('click', function () {
     updateCarousel()
 });
 
-$('#next-btn').on('click', function () {
+$('.next-btn').on('click', function () {
     if (imgCounter == maxImgCounter) {
         imgCounter = 1;
     } else {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Test</title>
+    <title>Bernardo Silva</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -67,8 +67,8 @@
     
         <div class="page-section" id="aboutme">
             <span class="progress-checkpoint" data-checkpoint-id="aboutme-checkpoint"></span>
+            <h1 class="title stroke">About me</h1>
             <div class="container aboutme-container">
-                <h1 class="title stroke">About me</h1>
                 <div class="aboutme-text text">Hello! My name is Bernardo Silva, I'm a junior web developer excited to explore new technologies and grow my skills. I recently completed a web development course, where I gained multiple programming skills in frontend and backend development. I'm always looking for challenges where I can apply and expand my skills. <br>Here some technologies I'm familiar with:</div>
                 <ul class="skills-list">
                     <li class="skills"><i class="bi bi-caret-right-fill"></i>HTML</li>
@@ -85,10 +85,10 @@
     
         <div class="page-section" id="projects">
             <span class="progress-checkpoint" data-checkpoint-id="projects-checkpoint"></span>
+            <h1 class="title stroke">Projects</h1>
             <div class="container projects-container">
-                <h1 class="title stroke">Projects</h1>
                 <div class="projects-list">
-                    <div class="project-item" data-project="0">
+                    <div class="project-item">
                         <div class="project-thumbnail">
                             <img src="img/pr1-1.png" alt="Project 1">
                         </div>
@@ -97,19 +97,19 @@
                             <p class="text">
                                 This project was made in the ambition of the Master D's course where I applied my knowledge of HTML, CSS, Javascript, PHP and MySQL. In this project i made a website for an online grocery where you have selection of item that you can add to a cart and checkout, an administrator dashboard where you can add products or change some values and check for order information. 
                             </p>
-                            <button type="button" class="btn">See more</button>
+                            <button type="button" class="btn project-btn" data-project="0" data-img-number="5">See more</button>
                         </div>
                     </div>
-                    <div class="project-item" data-project="1">
+                    <div class="project-item">
                         <div class="project-thumbnail">
                             <img src="img/pr1-1.png" alt="Project 1">
                         </div>
-                        <div class="project-info" data-project="0">
+                        <div class="project-info">
                             <h2 class="project-title">Blob</h2>
                             <p class="text">
                                 Blob was a game made as my final project for my high school course. In this project i made a simple top-down shooter where you fight off waves of enemies, promotional content such as a trailer and ads, a website and some merch. 
                             </p>
-                            <button type="button" class="btn">See more</button>
+                            <button type="button" class="btn project-btn" data-project="1" data-img-number="5">See more</button>
                         </div>
                     </div>
                 </div>
@@ -118,8 +118,8 @@
     
         <div class="page-section" id="contacts">
             <span class="progress-checkpoint" data-checkpoint-id="contacts-checkpoint"></span>
+            <h1 class="title stroke">Contacts</h1>
             <div class="container contacts-container">
-                <h1 class="title stroke">Contacts</h1>
                 <div class="contacts-text text">
                     Please don't hesitate to reach out by filling the form or reaching me through any of the contacts below.
                     <div class="contacts">
@@ -127,7 +127,7 @@
                         <span><i class="bi bi-envelope"></i>hi.bernardosilva@gmail.com</span>
                     </div>
                 </div>
-                <form action="" id="contact-form">
+                <form method="post" action="mailto: hi.bernardosilva@gmail.com" id="contact-form" enctype="multipart/form-data">
                     <div class="form-item">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name">
@@ -138,12 +138,38 @@
                     </div>
                     <div class="form-item">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="body" id="body"></textarea>
                     </div>
-                    <button type="submit" class="btn">Send</button>
+                    <input type="submit" class="btn" value="Send Email">
                 </form>
             </div>
         </div>
+    </div>
+
+    <div id="modal-background">
+        <div class="carousel" id="project-0">
+            <div class="images">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+            </div>
+            <button id="prev-btn" class="btn"><</button>
+            <button id="next-btn" class="btn">></button>
+        </div>
+        <div class="carousel" id="project-1">
+            <div class="images">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+                <img src="img/pr1-1.png" alt="">
+            </div>
+            <button id="prev-btn" class="btn"><</button>
+            <button id="next-btn" class="btn">></button>
+        </div>
+        <button id="close-btn" class="btn"><i class="bi bi-x-lg"></i></button>
     </div>
 
     <!-- JS -->

@@ -30,6 +30,25 @@ a {
     padding: 0 10px;
 }
 
+.btn {
+    border: none;
+    background-color: #0d6241;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(13, 98, 65, .5);
+}
+
+.btn:active {
+    background-color: #0d6241;
+}
+
 /* Navbar */
 
 .navbar {
@@ -127,8 +146,11 @@ a {
 }
 
 .page-section {
-    width: 100%;
+    width: 85%;
     position: relative;
+    margin: auto;
+    margin-top: 50px;
+    scroll-margin-top: 100px;
 }
 
 .page-section h1 {
@@ -148,8 +170,7 @@ a {
 
 .container {
     padding: 25px 0;
-    width: 85%;
-    margin: auto;
+    width: 100%;
 }
 
 /* Home */
@@ -316,15 +337,65 @@ a {
     height: max-content;
 }
 
-.btn {
-    border: none;
-    background-color: #0d6241;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    float: right;
-    margin-top: 10px;
+/* Modal */
+
+#modal-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #262626;
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    background-color: #262626;
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.images {
+    width: 75%;
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.images img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+#prev-btn {
+    position: absolute;
+    left: 25px;
+    padding: 10px 25px;
+}
+
+#next-btn {
+    position: absolute;
+    right: 25px;
+    padding: 10px 25px;
 }
 
 /* Tablets (768px and up) */

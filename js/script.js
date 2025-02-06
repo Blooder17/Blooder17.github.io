@@ -12,7 +12,7 @@ $(window).on('scroll resize load', function () {
     $('.progress-checkpoint').each(function () {
         if (isInViewport($(this))) {
             var checkpointID = $(this).data('checkpoint-id');
-            $('.navbar-item').removeClass('selected')
+            $('.navbar-item').removeClass('selected');
             $('#' + checkpointID).addClass('selected');
         }
     });
@@ -20,8 +20,38 @@ $(window).on('scroll resize load', function () {
 
 $('#navbar-toggle').on('click', function () {
     $('#navbar').toggleClass('open');
-})
+});
 
-$('.project-item').on('click', function () {
-    $(this).data('project');
-})
+let projectNumber;
+let maxImgCounter;
+let imgCounter = 1;
+
+$('.project-btn').on('click', function () {
+    projectNumber = $(this).data('project');
+    maxImgCounter = $(this).data('img-number');
+    imgCounter = 1;
+    $('#modal-background').css('display', 'flex');
+    $('#project-' + projectNumber).css('display', 'flex');
+});
+
+$('#prev-btn').on('click', function () {
+    if (imgCounter == 1) {
+        imgCounter = maxImgCounter;
+    } else {
+        imgCounter--;
+    }
+    updateCarousel()
+});
+
+$('#next-btn').on('click', function () {
+    if (imgCounter == maxImgCounter) {
+        imgCounter = 1;
+    } else {
+        imgCounter++;
+    }
+    updateCarousel()
+});
+
+function updateCarousel() {
+    $('#project-' + projectNumber + ' img').css('transform', 'translate(-' + (imgCounter - 1) + '00%)');
+}

@@ -121,33 +121,19 @@
             <h1 class="title stroke">Contacts</h1>
             <div class="container contacts-container">
                 <div class="contacts-text text">
-                    Please don't hesitate to reach out by filling the form or reaching me through any of the contacts below.
+                    Please don't hesitate to reach out to me through any of the contacts below.
                     <div class="contacts">
                         <span><i class="bi bi-telephone"></i>910261840</span>
                         <span><i class="bi bi-envelope"></i>hi.bernardosilva@gmail.com</span>
                     </div>
                 </div>
-                <form method="post" action="mailto: hi.bernardosilva@gmail.com" id="contact-form" enctype="multipart/form-data">
-                    <div class="form-item">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="form-item">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-item">
-                        <label for="message">Message</label>
-                        <textarea name="body" id="body"></textarea>
-                    </div>
-                    <input type="submit" class="btn" value="Send Email">
-                </form>
             </div>
         </div>
     </div>
 
     <div id="modal-background">
         <div class="carousel" id="project-0">
+            <button class="close-btn btn"><i class="bi bi-x-lg"></i></button>
             <div class="images">
                 <img src="img/pr1-1.png" alt="">
                 <img src="img/pr1-1.png" alt="">
@@ -155,10 +141,13 @@
                 <img src="img/pr1-1.png" alt="">
                 <img src="img/pr1-1.png" alt="">
             </div>
-            <button class="prev-btn btn"><</button>
-            <button class="prev-btn btn">></button>
+            <div class="controls">
+                <button class="prev-btn btn"><</button>
+                <button class="next-btn btn">></button>
+            </div>
         </div>
         <div class="carousel" id="project-1">
+            <button class="close-btn btn"><i class="bi bi-x-lg"></i></button>
             <div class="images">
                 <img src="img/pr1-1.png" alt="">
                 <img src="img/pr1-1.png" alt="">
@@ -166,10 +155,11 @@
                 <img src="img/pr1-1.png" alt="">
                 <img src="img/pr1-1.png" alt="">
             </div>
-            <button class="prev-btn btn"><</button>
-            <button class="next-btn btn">></button>
+            <div class="controls">
+                <button class="prev-btn btn"><</button>
+                <button class="next-btn btn">></button>
+            </div>
         </div>
-        <button id="close-btn" class="btn"><i class="bi bi-x-lg"></i></button>
     </div>
 
     <!-- JS -->

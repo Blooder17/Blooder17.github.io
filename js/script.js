@@ -32,11 +32,10 @@ $('.project-btn').on('click', function () {
     imgCounter = 1;
     $('#modal-background').css('display', 'flex');
     $('#project-' + projectNumber).css('display', 'flex');
+    updateCarousel()
 });
 
 $('.prev-btn').on('click', function () {
-    console.log('poggers');
-    
     if (imgCounter == 1) {
         imgCounter = maxImgCounter;
     } else {
@@ -52,6 +51,11 @@ $('.next-btn').on('click', function () {
         imgCounter++;
     }
     updateCarousel()
+});
+
+$('.close-btn').on('click', function () {
+    $('#modal-background').css('display', 'none');
+    $('#project-' + projectNumber).css('display', 'none');
 });
 
 function updateCarousel() {

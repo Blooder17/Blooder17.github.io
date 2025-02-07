@@ -353,25 +353,23 @@ a {
     align-items: center;
 }
 
-.modal {
-    background-color: #262626;
-    width: 95%;
-    height: 95%;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .carousel {
     background-color: #262626;
     width: 95%;
-    height: 95%;
+    padding: 25px 0;
     border-radius: 15px;
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: relative;
+    padding-top: 75px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
 }
 
 .images {
@@ -386,15 +384,17 @@ a {
     transition: transform .5s;
 }
 
+.controls {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .prev-btn {
-    position: absolute;
-    left: 25px;
     padding: 10px 25px;
 }
 
 .next-btn {
-    position: absolute;
-    right: 25px;
     padding: 10px 25px;
 }
 
@@ -451,6 +451,19 @@ a {
     
     .home-img img {
         width: 50%;
+    }
+
+    .aboutme-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aboutme-text {
+        flex-basis: 50%;
+    }
+
+    .skills-list {
+        flex-basis: 25%;
     }
 
     .project-item {

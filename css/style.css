@@ -420,6 +420,10 @@ a {
         align-content: center;
         width: 50%;
     }
+
+    .carousel {
+        height: 75%;
+    }
 }
 
 /* Laptops and Desktops (1280px and up) */

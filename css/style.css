@@ -253,7 +253,8 @@ a {
 .project-item {
     display: flex;
     flex-direction: column;
-    background-color: #262626;
+    background-color: #1f1f1f;
+    box-shadow: #000000 5px 5px 5px;
     border-radius: 10px;
 }
 
@@ -354,7 +355,7 @@ a {
 }
 
 .carousel {
-    background-color: #262626;
+    background-color: #1f1f1f;
     width: 95%;
     padding: 25px 0;
     border-radius: 15px;
@@ -374,6 +375,7 @@ a {
 
 .images {
     width: 75%;
+    gap: 50px;
     display: flex;
     justify-content: start;
     overflow: hidden;

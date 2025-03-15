@@ -59,5 +59,5 @@ $('.close-btn').on('click', function () {
 });
 
 function updateCarousel() {
-    $('#project-' + projectNumber + ' img').css('transform', 'translate(-' + (imgCounter - 1) + '00%)');
+    $('#project-' + projectNumber + ' .image').css('transform', 'translate(-' + (imgCounter - 1) + '00%)');
 }
